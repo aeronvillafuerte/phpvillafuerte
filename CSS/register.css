@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(to bottom, #a87b90, #c6a987, #e4d7de);
+}
+
+.container {
+  background: url(images/bg.png) no-repeat center/cover;
+  width: 80%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px; /* Reduced margin for smaller screens */
+  flex-wrap: wrap; /* Allow tabs to wrap on smaller screens */
+}
+
+.tab {
+  cursor: pointer;
+  margin-top: 10px; /* Reduced top margin for smaller screens */
+  padding: 8px; /* Adjust padding for smaller tabs */
+  background-color: rgb(131, 241, 131);
+  color: #050505;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 10px; /* Adjust margin for smaller screens */
+}
+
+.form {
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: rgb(8, 8, 8);
+}
+
+h2 {
+  color: rgb(4, 4, 4);
+  margin-top: 2px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #008cff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0077b3; /* Adjust hover color for better contrast */
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%; /* Adjust container width for smaller screens */
+  }
+
+  .tab {
+    margin-right: 5px; /* Further reduce right margin for smaller screens */
+  }
+}
